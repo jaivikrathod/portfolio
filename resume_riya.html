@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Riya Lila | AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101420;        /* headings */
+    --body:#2f3444;       /* body copy */
+    --muted:#6b7288;      /* stack lines, meta */
+    --accent:#1f3a8a;     /* navy accent */
+    --accent-2:#51608f;   /* org / secondary */
+    --rule:#c9cedd;       /* section rules */
+    --hair:#e3e6ef;       /* light dividers */
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+  @page{ size:A4; margin:0; }
+  html,body{ background:#e9ebf0; }
+
+  body{
+    font-family:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--body);
+    font-size:8.5pt;
+    line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- hard A4 page, one page only ---------- */
+  .page{
+    position:relative;
+    width:210mm; height:297mm;
+    padding:9mm 13mm 8mm;
+    margin:0 auto; background:#fff;
+    display:flex; flex-direction:column;
+    overflow:hidden; break-inside:avoid;
+  }
+
+  /* ---------- name block ---------- */
+  header{ text-align:center; }
+  h1{
+    font-size:23pt; font-weight:800; color:var(--ink);
+    letter-spacing:.055em; text-transform:uppercase; line-height:1.05;
+  }
+  .headline{
+    margin-top:4px; font-size:8.8pt; color:var(--accent);
+    font-weight:600; letter-spacing:.005em;
+  }
+  .headline .bar{ color:var(--rule); font-weight:400; margin:0 3px; }
+
+  .contact{
+    margin-top:6px; font-size:8.4pt; color:var(--body);
+    display:flex; justify-content:center; align-items:center;
+    flex-wrap:wrap; gap:0 6px;
+  }
+  .contact a{ color:var(--body); text-decoration:none; }
+  .contact a.ln{ color:var(--accent); font-weight:600; }
+  .contact .dot{ color:var(--rule); }
+
+  .headrule{ height:1.6px; background:var(--ink); margin-top:9px; }
+
+  /* ---------- flowing single column ---------- */
+  main{
+    flex:1; min-height:0;
+    display:flex; flex-direction:column;
+    gap:8px; justify-content:space-evenly;
+    padding-top:0;
+  }
+
+  h2{
+    font-size:8.6pt; font-weight:700; color:var(--ink);
+    text-transform:uppercase; letter-spacing:.14em;
+    padding-bottom:2.5px; border-bottom:1px solid var(--rule);
+    margin-bottom:6px;
+  }
+
+  /* ---------- core competencies strip ---------- */
+  .comp{ font-size:8.3pt; line-height:1.55; }
+  .comp .sep{ color:var(--accent); margin:0 2px; }
+
+  /* ---------- technical skills table ---------- */
+  .skill{
+    display:grid; grid-template-columns:34mm 1fr;
+    gap:0 5mm; align-items:baseline;
+    padding:1.2px 0;
+    border-bottom:1px solid var(--hair);
+  }
+  .skill:last-child{ border-bottom:0; }
+  .skill dt{
+    font-weight:700; color:var(--ink); font-size:8.2pt;
+    letter-spacing:.015em;
+  }
+  .skill dd{ font-size:8.3pt; }
+
+  /* ---------- experience / project entries ---------- */
+  .entry{ margin-bottom:9px; }
+  section.projects .entry{ margin-bottom:14px; }
+  section.projects .entry:last-child{ margin-bottom:0; }
+  section.projects li{ margin-bottom:2.5px; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-head{
+    display:flex; justify-content:space-between;
+    align-items:baseline; gap:10px;
+  }
+  .role{ font-size:9.6pt; font-weight:700; color:var(--ink); letter-spacing:-.005em; }
+  .role .at{ font-weight:500; color:var(--accent-2); }
+  .dates{
+    font-size:8.2pt; font-weight:600; color:var(--accent);
+    white-space:nowrap; letter-spacing:.01em;
+  }
+  .sub{ font-size:8.2pt; color:var(--muted); font-style:italic; margin-top:.5px; }
+  .stack{
+    font-size:8.2pt; color:var(--accent-2);
+    margin-top:1.5px; letter-spacing:.005em;
+  }
+  .links{ font-size:8.2pt; font-weight:600; white-space:nowrap; }
+  .links a{ color:var(--accent); text-decoration:none; }
+  .links .bar{ color:var(--rule); margin:0 2px; font-weight:400; }
+
+  ul{ list-style:none; margin-top:3px; }
+  li{ position:relative; padding-left:11px; margin-bottom:1px; }
+  li:last-child{ margin-bottom:0; }
+  li::before{
+    content:"\25B8"; position:absolute; left:0; top:-.02em;
+    color:var(--accent); font-size:8.2pt;
+  }
+
+  /* ---------- freelance compact rows ---------- */
+  .fl{ margin-bottom:3px; }
+  .fl:last-child{ margin-bottom:0; }
+  .fl b{ font-weight:700; color:var(--ink); }
+  .fl a{ color:var(--accent); text-decoration:none; font-weight:500; }
+  .fl .dot{ color:var(--rule); }
+
+  /* ---------- education ---------- */
+  .edu-sub{ font-size:8.6pt; color:var(--accent-2); margin-top:.5px; }
+
+  @media print{
+    html,body{ background:#fff; }
+    .page{ margin:0; box-shadow:none; }
+    a{ color:inherit; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Riya Lila</h1>
+    <div class="headline">
+      AI Engineer <span class="bar">|</span>
+      LLM Applications, RAG &amp; Generative AI
+    </div>
+    <div class="contact">
+      <a href="mailto:riyalila93@gmail.com">riyalila93@gmail.com</a>
+      <span class="dot">•</span>
+      <a href="tel:+918780034420">+91 87800 34420</a>
+      <span class="dot">•</span>
+      <a class="ln" href="https://www.linkedin.com/in/riyalila/">LinkedIn</a>
+      <span class="dot">•</span>
+      <span>Ahmedabad, Gujarat, India</span>
+    </div>
+    <div class="headrule"></div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>AI Engineer with hands-on experience building AI-powered chatbots, RAG pipelines, LLM applications and vector-search systems. Proficient in Python, Django, FastAPI, LangChain, OpenAI APIs and Pinecone, with experience in multilingual WhatsApp chatbots, AI-based diagnosis pipelines, computer vision and integrating LLMs into production backend services.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <dl>
+        <div class="skill">
+          <dt>Languages</dt>
+          <dd>Python, Java, C, C++, C#, JavaScript, SQL, HTML, CSS</dd>
+        </div>
+        <div class="skill">
+          <dt>Generative AI &amp; LLMs</dt>
+          <dd>OpenAI APIs (GPT, Vision), Gemini API, LangChain, LangSmith, RAG, Prompt Engineering, Function Calling</dd>
+        </div>
+        <div class="skill">
+          <dt>Vector Search</dt>
+          <dd>Pinecone, FAISS, pgvector, Vector Embeddings, Semantic Search, Sentence Transformers</dd>
+        </div>
+        <div class="skill">
+          <dt>ML &amp; Computer Vision</dt>
+          <dd>PyTorch, Hugging Face Transformers, OpenCV, YOLO11, ByteTrack, X-CLIP</dd>
+        </div>
+        <div class="skill">
+          <dt>Frameworks</dt>
+          <dd>Django, FastAPI, Flask, React.js, REST APIs</dd>
+        </div>
+        <div class="skill">
+          <dt>Databases</dt>
+          <dd>MySQL, PostgreSQL, MongoDB, SQL Server, SQLite, Redis</dd>
+        </div>
+        <div class="skill">
+          <dt>Tools</dt>
+          <dd>Git, GitHub, Docker, Postman, Windows Server</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">AI Engineer <span class="at">| Cloudvexa, Ahmedabad</span></div>
+          <div class="dates">May 2026 – Present</div>
+        </div>
+        <ul>
+          <li>Developed AI-powered chatbots for PropertysDeal using Python, Django, FastAPI and OpenAI APIs.</li>
+          <li>Built a WhatsApp chatbot integrated with real-time property APIs, supporting searches by city, locality, budget and property type.</li>
+          <li>Implemented multilingual chatbot flows supporting English, Hindi and Gujarati user queries.</li>
+          <li>Worked on AI-based property comparison features to help users compare listings, prices and localities.</li>
+          <li>Developed LLM-powered review generation and customer review reply features using OpenAI APIs.</li>
+          <li>Worked with Docker, Git, REST APIs and backend services for AI application development.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">AI/ML Trainee <span class="at">| MobileFirstApplications – Fintegration, Ahmedabad</span></div>
+          <div class="dates">Jan 2026 – May 2026</div>
+        </div>
+        <div class="stack"><b>AI-Powered Dermatology Platform</b> · FastAPI, MongoDB, OpenAI Vision, FAISS, RAG, LLMs</div>
+        <ul>
+          <li>Built an AI diagnosis pipeline to identify diseases and severity, and generate personalised treatment recommendations.</li>
+          <li>Developed a doctor dashboard for managing diseases, medications and AI knowledge workflows.</li>
+          <li>Integrated GPT-5.5, LangChain and LangSmith, and deployed the platform on Windows Server.</li>
+          <li>Gained practical knowledge of Generative AI, RAG pipelines, Pinecone, vector embeddings, semantic search and prompt engineering.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Personal Projects</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">Universal AI Customer Support Platform</div>
+        </div>
+        <div class="stack">Python, Django, React, PostgreSQL, pgvector, Gemini API, Redis</div>
+        <ul>
+          <li>Developed a multi-tenant AI chatbot platform where businesses upload documents, CSV/JSON files and REST APIs to create custom AI support agents.</li>
+          <li>Implemented RAG-based retrieval using vector search and PostgreSQL full-text search to generate context-aware responses.</li>
+          <li>Integrated Gemini function calling for external APIs, with human-agent handoff and website and WhatsApp chat integrations.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">Vision Hub <span class="at">| Computer Vision Video Analytics</span></div>
+        </div>
+        <div class="stack">Python, FastAPI, PyTorch, YOLO11, ByteTrack, X-CLIP, OpenCV, FFmpeg, React, SQLite</div>
+        <ul>
+          <li>Developed a video analytics platform to upload videos, select computer vision models and view detection results on an interactive dashboard.</li>
+          <li>Implemented human detection, pose estimation, multi-object tracking and activity recognition across video frames.</li>
+          <li>Built a modular architecture for multiple CV models, with background processing and real-time progress via Server-Sent Events.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">Master of Computer Applications <span class="at">| GLS University, Ahmedabad</span></div>
+          <div class="dates">2024 – 2026</div>
+        </div>
+        <div class="edu-sub">SGPA: 8.86</div>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="role">Bachelor of Computer Applications <span class="at">| Dr. V. R. Godhaniya College, Porbandar</span></div>
+          <div class="dates">2021 – 2024</div>
+        </div>
+        <div class="edu-sub">CGPA: 8.83</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>

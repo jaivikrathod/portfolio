@@ -153,8 +153,9 @@
   <header>
     <h1>Jaivik Rathod</h1>
     <div class="headline">
+      AI Engineer <span class="bar">|</span>
       Full Stack Developer <span class="bar">|</span>
-      AI &amp; Computer Vision
+      LLM &amp; Computer Vision
     </div>
     <div class="contact">
       <a href="mailto:jaivikrathodpfs@gmail.com">jaivikrathodpfs@gmail.com</a>
@@ -176,7 +177,7 @@
 
     <section>
       <h2>Professional Summary</h2>
-      <p>Full Stack Developer with 2+ years of experience building and maintaining web applications using Python, Django, FastAPI, React, Angular and relational databases. Experienced in developing AI-powered applications, including RAG-based chatbot systems and computer vision solutions for video analytics. Skilled in backend API development, frontend integration, database design and building end-to-end software solutions.</p>
+      <p>AI-focused Full Stack Developer with 2+ years of experience shipping production features in healthcare and building end-to-end AI applications. Hands-on with LLM applications (RAG, embeddings, hybrid search, function calling) and computer vision pipelines (detection, tracking, pose estimation, activity recognition), backed by strong Python backend skills in FastAPI and Django and React/Angular frontends. Looking for an AI/GenAI Engineer role where I can turn models into reliable, user-facing products.</p>
     </section>
 
     <section>
@@ -188,7 +189,7 @@
         </div>
         <div class="skill">
           <dt>Backend</dt>
-          <dd>Django, Django REST Framework, FastAPI, Django Channels, REST APIs, WebSockets</dd>
+          <dd>Django (DRF, Channels), FastAPI, REST APIs, WebSockets, SSE</dd>
         </div>
         <div class="skill">
           <dt>Frontend</dt>
@@ -196,19 +197,24 @@
         </div>
         <div class="skill">
           <dt>Databases</dt>
-          <dd>PostgreSQL, MySQL, MongoDB, SQLite, Redis</dd>
+          <dd>PostgreSQL (pgvector), MySQL, MongoDB, SQLite, Redis</dd>
         </div>
         <div class="skill">
-          <dt>AI &amp; Machine Learning</dt>
-          <dd>LLMs, RAG, Gemini API, Prompt Engineering, PyTorch, Hugging Face Transformers, Sentence Transformers</dd>
+          <dt>GenAI &amp; LLMs</dt>
+          <dd>RAG, Embeddings, Hybrid Search, Gemini API, Function Calling, Prompt Engineering, LangChain, LangGraph, RAGAS, LoRA/PEFT, Hugging Face, Sentence Transformers</dd>
+        </div>
+        <div class="skill">
+          <dt>ML Fundamentals</dt>
+          <dd>PyTorch, NumPy, Pandas, Scikit-learn, Model Evaluation (mAP, Precision, Recall, F1)</dd>
+          <!-- Remove any item you have not used -->
         </div>
         <div class="skill">
           <dt>Computer Vision</dt>
-          <dd>OpenCV, YOLO11, Object Detection, Pose Estimation, ByteTrack, Activity Recognition, FFmpeg</dd>
+          <dd>OpenCV, YOLO11, Pose Estimation, ByteTrack, Activity Recognition, FFmpeg, ONNX, TensorRT</dd>
         </div>
         <div class="skill">
-          <dt>Tools</dt>
-          <dd>Git, GitHub, Bitbucket, Jira</dd>
+          <dt>Tools &amp; DevOps</dt>
+          <dd>Docker, AWS/GCP, CI/CD, Git, GitHub, Bitbucket, Jira</dd>
         </div>
       </dl>
     </section>
@@ -222,11 +228,11 @@
           <div class="dates">Sep 2024 – Present</div>
         </div>
         <ul>
-          <li>Develop and maintain features for a US-based telehealth platform using React, Angular, Python and FastAPI.</li>
-          <li>Develop and integrate backend APIs, database operations and frontend workflows for healthcare applications.</li>
-          <li>Implement AI-powered features using RAG, embeddings and semantic search to retrieve relevant information from stored data.</li>
-          <li>Work on image-processing workflows using OpenCV, including image preprocessing and quality validation.</li>
-          <li>Debug production issues, resolve technical debt and maintain existing application functionality.</li>
+          <li>Build and maintain features for a US-based telehealth platform using React, Angular, Python and FastAPI.</li>
+          <li>Designed and shipped backend APIs, database operations and frontend workflows for patient-facing healthcare features.</li>
+          <li>Implemented AI-powered retrieval using RAG, embeddings and semantic search to surface relevant information from stored data.</li>
+          <li>Built OpenCV image-processing workflows for preprocessing and quality validation of uploaded images.</li>
+          <li>Resolved production issues and paid down technical debt to keep the platform stable.</li>
         </ul>
       </div>
 
@@ -236,7 +242,7 @@
           <div class="dates">May 2024 – Sep 2024</div>
         </div>
         <ul>
-          <li>Built responsive user interfaces and contributed to backend functionality on live client projects alongside the development team.</li>
+          <li>Built responsive user interfaces and backend functionality on live client projects as part of the development team.</li>
         </ul>
       </div>
     </section>
@@ -251,11 +257,10 @@
         </div>
         <div class="stack">Python, Django, React, PostgreSQL, pgvector, Gemini API, Redis</div>
         <ul>
-          <li>Developed a multi-tenant AI chatbot platform that allows businesses to upload documents, CSV/JSON files and connect REST APIs to create custom AI support agents.</li>
-          <li>Implemented RAG-based retrieval using vector search and PostgreSQL full-text search to generate context-aware responses.</li>
-          <li>Integrated Gemini function calling to interact with external APIs and support automated workflows.</li>
-          <li>Implemented human-agent handoff, allowing conversations to be transferred from AI to support agents.</li>
-          <li>Built integrations for website chat widgets and WhatsApp-based customer support.</li>
+          <li>Built a multi-tenant AI support platform where businesses upload documents, CSV/JSON files and connect REST APIs to create custom AI agents, with isolated data per tenant.</li>
+          <li>Implemented hybrid RAG retrieval (pgvector similarity search plus PostgreSQL full-text search) to generate context-aware answers.</li>
+          <li>Integrated Gemini function calling to trigger external APIs and automate workflows, with human-agent handoff from AI to live support.</li>
+          <li>Delivered website chat widget and WhatsApp integrations for customer support.</li>
         </ul>
       </div>
 
@@ -266,11 +271,10 @@
         </div>
         <div class="stack">Python, FastAPI, PyTorch, YOLO11, ByteTrack, X-CLIP, OpenCV, FFmpeg, React, SQLite</div>
         <ul>
-          <li>Developed a video analytics platform that allows users to upload videos, select computer vision models and view detection results through an interactive dashboard.</li>
-          <li>Implemented human detection, pose estimation and multi-object tracking to identify and track people across video frames.</li>
-          <li>Integrated activity recognition models to identify human activities from video footage.</li>
-          <li>Built a modular architecture to integrate multiple computer vision models into a single application.</li>
-          <li>Implemented background video processing and real-time progress updates using Server-Sent Events (SSE).</li>
+          <li>Built a video analytics platform where users upload videos, pick CV models and explore results on an interactive dashboard.</li>
+          <li>Implemented human detection, pose estimation and ByteTrack multi-object tracking to follow people across video frames.</li>
+          <li>Integrated X-CLIP activity recognition with a modular architecture that plugs multiple CV models into one application.</li>
+          <li>Added background video processing with real-time progress updates via Server-Sent Events (SSE).</li>
         </ul>
       </div>
     </section>
